@@ -1,19 +1,20 @@
 package main.java.generics;
 
 public class MaxFinder {
-    public static Integer findMax(Integer int1, Integer int2, Integer int3) {
-        Integer max = int1;
-        if(int2.compareTo(max) > 0)
-            max = int2;
-        if(int3.compareTo(max) > 0)
-            max = int3;
-        System.out.printf("Max value of %s %s %s is %s. \n", int1, int2, int3, max);
+    public static Float findMax(Float float1, Float float2, Float float3) {
+        Float max = float1;
+        if(float2.compareTo(max) > 0)
+            max = float2;
+        if(float3.compareTo(max) > 0)
+            max = float3;
+        System.out.printf("Max value of %s %s %s is %s. \n", float1, float2, float3, max);
+
 
         return max;
     }
     public static void main(String[] args) {
-        Integer int1 = 1, int2 = 4, int3 = 7;
-        findMax(int1, int2, int3);
+        Float float1 = 1.34f, float2 = 4.56f, float3 = 7.98f;
+        findMax(float1, float2, float3);
 
     }
 }
