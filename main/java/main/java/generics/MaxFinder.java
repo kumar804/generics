@@ -4,18 +4,22 @@ import java.util.Arrays;
 
 public class MaxFinder<T extends Comparable<T>>  {
     T[] elements;
-    public  MaxFinder(T[] elements){
+
+    public  MaxFinder(T[] elements) {
         this.elements = elements;
     }
-    public T maximum(){
+
+    public T maximum() {
         return MaxFinder.findMax(elements);
     }
-    public static <T> void printMax(T[] elements, T max){
+
+    public static <T> void printMax(T[] elements, T max) {
         for (T element : elements) {
             System.out.print(element);
         }
         System.out.printf("Max is %s \n", max);
     }
+
     public static <T extends Comparable<T>> T findMax(T[] elements) {
         Arrays.sort(elements);
         int length = elements.length;
@@ -23,6 +27,8 @@ public class MaxFinder<T extends Comparable<T>>  {
 
         return max;
     }
+
+
 
 
 
