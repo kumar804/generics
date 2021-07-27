@@ -1,5 +1,6 @@
-package test.java.test.java.generics;
+package test.java.generics;
 
 public class TU_MaxFinder {
+    
 
 }
